@@ -1,0 +1,19 @@
+name: Azure Python 3.9
+on: [push]
+jobs:
+	build:
+		runs-on: ubuntu-latest
+		steps:
+		- user: actions/checkout@v2
+		- name: Set up Python 3.9
+		  use: actions/setup-python@v1
+		  with: python-version:3.9
+		- name: Install dependencies
+		  run: | 
+		    make Install
+		- name: Lint
+		  run: |
+		    make Lint
+		- name: Test
+		  run: |
+		    make test
