@@ -3,7 +3,7 @@ import numpy as np
 from datetime import datetime, timedelta
 
 
-def generate_retail_demand_data(start_date='2019-01-01', end_date='2021-12-31', random_seed=42):
+def generate_retail_demand_data(start_date='2022-01-01', end_date='2024-12-31', random_seed=42):
     """
     Generate realistic retail demand data for multiple products
     """
@@ -15,8 +15,8 @@ def generate_retail_demand_data(start_date='2019-01-01', end_date='2021-12-31', 
 
     # Product catalog
     products = [
-        {'product_id': 'P001', 'category': 'Electronics', 'base_price': 299.99, 'base_demand': 15, 'trend': 'growth'},
-        {'product_id': 'P002', 'category': 'Electronics', 'base_price': 89.99, 'base_demand': 25, 'trend': 'stable'},
+        {'product_id': 'P001', 'category': 'Electronics', 'base_price': 299.99, 'base_demand': 5, 'trend': 'growth'},
+        {'product_id': 'P002', 'category': 'Electronics', 'base_price': 89.99, 'base_demand': 8, 'trend': 'stable'},
         {'product_id': 'P003', 'category': 'Clothing', 'base_price': 49.99, 'base_demand': 40, 'trend': 'seasonal'},
         {'product_id': 'P004', 'category': 'Clothing', 'base_price': 79.99, 'base_demand': 30, 'trend': 'decline'},
         {'product_id': 'P005', 'category': 'Home', 'base_price': 149.99, 'base_demand': 20, 'trend': 'stable'},
