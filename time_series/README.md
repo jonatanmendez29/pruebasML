@@ -270,4 +270,4 @@ For support and questions:
 
 ---
 
-**Ready to forecast?** Start with the [quick start guide](#quick-start) or explore the [detailed documentation](docs/).
+**Ready to forecast?** Start with the [quick start guide](#-quick-start) or explore the [detailed documentation](docs/).
