@@ -1,0 +1,35 @@
+data:
+  processed_path: data/processed/
+  raw_data_path: data/raw/retail_demand_dataset.csv
+  test_size: 0.2
+features:
+  cyclical_features:
+  - day_of_week
+  - month
+  lag_periods:
+  - 1
+  - 7
+  - 14
+  - 28
+  - 56
+  rolling_features:
+  - mean
+  - std
+  - max
+  window_sizes:
+  - 7
+  - 28
+model:
+  hyperparameters:
+    max_depth: 15
+    n_estimators: 200
+    n_jobs: -1
+    random_state: 42
+  name: random_forest
+training:
+  metrics:
+  - mae
+  - mse
+  - rmse
+  target_column: units_sold
+  validation_split: '2024-01-01'

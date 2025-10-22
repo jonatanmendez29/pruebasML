@@ -19,5 +19,5 @@ model:
 
 training:
   target_column: "units_sold"
-  validation_split: "2021-01-01"
+  validation_split: "2024-01-01"
   metrics: ["mae", "mse", "rmse"]
