@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.model_selection import TimeSeriesSplit
@@ -34,7 +35,8 @@ def prepare_training_data(df, target_col='units_sold'):
     feature_columns = base_features + lag_features + price_features + additional_features
 
     # Remove rows with NaN values
-    df_clean = df.dropna(subset=feature_columns + [target_col])
+    df_clean = df.fillna(0)
+    df_clean = df_clean.dropna(subset=feature_columns + [target_col])
 
     # Split chronologically
     split_date = config['training']['validation_split']
@@ -144,7 +146,6 @@ def train_model(product_id='P001', save_model=True):
 
     # Create visualizations
     plot_feature_importance(model, feature_columns, product_id)
-
     test_dates = df_features[df_features['date'] >= config['training']['validation_split']]['date']
     plot_prediction_comparison(test_dates, y_test, y_pred, product_id)
 
