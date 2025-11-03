@@ -232,12 +232,13 @@ pre-commit run --all-files
 
 This project is part of an educational series on MLOps for Time Series:
 
-1. **Article 1**: [The Multi-Million Dollar Problem - Business Context](https://www.linkedin.com/pulse/multi-million-dollar-problem-stockouts-obsolete-stock-m%C3%A9ndez-l%C3%B3pez-m9nse)
-2. **Article 2**: [Traditional Time Series Models - Statistical Foundations](https://www.linkedin.com/pulse/our-first-forecast-traditional-time-series-models-m%C3%A9ndez-l%C3%B3pez-qfice)
-3. **Article 3**: [Machine Learning for Forecasting - Feature Engineering](https://www.linkedin.com/pulse/beyond-tradition-harnessing-machine-learning-demand-m%C3%A9ndez-l%C3%B3pez-6o5ee)
-4. **Article 4**: [MLOps Foundations - Project Structure & Reproducibility](https://www.linkedin.com/pulse/mlops-foundation-structuring-our-project-jonatan-m%C3%A9ndez-l%C3%B3pez-5avme)
-5. **Article 5**: Scaling to Cloud - AWS Infrastructure
-6. **Article 6**: Production Deployment - Monitoring & Maintenance
+1. **Article 1**: [The Multi-Million Dollar Problem - Business Context](https://jonatanmendez.netlify.app/posts/the-multi-million-dollar-problem-stockouts-and-obsolete-stock/)
+2. **Article 2**: [Traditional Time Series Models - Statistical Foundations](https://jonatanmendez.netlify.app/posts/our-first-forecast-traditional-time-series-models-on-your-laptop/)
+3. **Article 3**: [Machine Learning for Forecasting - Feature Engineering](https://jonatanmendez.netlify.app/posts/beyond-tradition-harnessing-machine-learning-for-demand-forecasting/)
+4. **Article 4**: [MLOps Foundations - Project Structure & Reproducibility](https://jonatanmendez.netlify.app/posts/the-mlops-foundation-structuring-our-project-for-reproducibility-and-collaboration/)
+5. **Article 5**: [Hitting a Wall - Why Your Laptop Isn't Enough](https://jonatanmendez.netlify.app/posts/hitting-a-wall-why-your-laptop-isnt-enough/)
+6. **Article 6**: [Scaling to Cloud - AWS Infrastructure](https://jonatanmendez.netlify.app/posts/cloud-power-up-building-a-scalable-forecast-engine-on-aws/)
+7. **Article 7**: [Production Deployment - Monitoring & Maintenance](https://jonatanmendez.netlify.app/posts/the-final-mile-deployment-monitoring-and-business-impact/)
 
 ## 🐛 Troubleshooting
 
